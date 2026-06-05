@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "ES7-Quokka",
+    "Thunder-Client",
+    "Thunder-Client",
+    "autoprefixer",
+    "prettier",
+    "tailwindcss-intellisense",
+    "typescript-import-sorter",
+    "thunder-client"
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "tailwindCSS.experimental.classRegex": [
+      ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    ]
+  }
+}
