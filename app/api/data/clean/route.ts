@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { CustomerRecord, CleanedDataResult } from "@/lib/types";
-import {
-  cleanDataset,
-  identifyIssues,
-  calculateQualityMetrics,
-} from "@/lib/utils/data-validation";
+import { cleanDataset } from "@/lib/utils/data-validation";
 
 export async function POST(request: NextRequest) {
   try {
