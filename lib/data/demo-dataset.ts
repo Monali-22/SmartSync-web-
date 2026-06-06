@@ -1,6 +1,5 @@
 import { CustomerRecord } from "@/lib/types";
 import { generateId } from "@/lib/utils/helpers";
-import { faker } from "@faker-js/faker";
 
 // Create a simple faker-like implementation for sample data
 export function generateDemoDataset(count: number = 500): CustomerRecord[] {
