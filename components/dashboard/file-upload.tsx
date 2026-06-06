@@ -124,7 +124,7 @@ export function FileUpload({ onFileSelect, isLoading }: FileUploadProps) {
           </div>
         )}
 
-        <Alert className="mt-6" variant="info">
+        <Alert className="mt-6" variant="default">
           <AlertDescription>
             📌 Pro tip: Use our sample dataset to try SmartSync AI right now!
           </AlertDescription>
