@@ -135,7 +135,7 @@ export function DetailedMetrics({ metrics }: DetailedMetricsProps) {
                     {detail.label}
                   </span>
                 </div>
-                <Badge variant="secondary">{detail.value}</Badge>
+                <Badge variant="default">{detail.value}</Badge>
               </div>
             );
           })}
