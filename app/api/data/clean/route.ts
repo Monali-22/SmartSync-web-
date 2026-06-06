@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import { CustomerRecord, CleanedDataResult } from "@/lib/types";
 import {
   cleanDataset,
-  detectDuplicates,
   identifyIssues,
   calculateQualityMetrics,
 } from "@/lib/utils/data-validation";
