@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       );
     }
 const recommendations = await generateAIRecommendations(metrics);
-    );
+    
 
     return NextResponse.json(recommendations);
   } catch (error) {
