@@ -18,20 +18,17 @@ import { ExportOptions } from "@/components/dashboard/export-options";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Badge } from "@/components/ui/badge";
 import {
   CleanedDataResult,
   AIRecommendations,
   CustomerRecord,
-  DataQualityMetrics,
 } from "@/lib/types";
 import {
   AlertCircle,
+  BarChart3,
   CheckCircle2,
-  Download,
   Sparkles,
   Upload,
-  BarChart3,
 } from "lucide-react";
 
 export default function DashboardPage() {
@@ -64,7 +61,6 @@ export default function DashboardPage() {
 
       const text = await uploadedFile.text();
       const lines = text.split("\n");
-      const headers = lines[0].split(",").map((h) => h.trim());
       const records: CustomerRecord[] = [];
 
       for (let i = 1; i < lines.length; i++) {
