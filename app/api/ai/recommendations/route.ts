@@ -13,10 +13,7 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
-
-    const recommendations = await generateAIRecommendations(
-      metrics,
-      metrics.totalRecords
+const recommendations = await generateAIRecommendations(metrics);
     );
 
     return NextResponse.json(recommendations);
