@@ -6,8 +6,7 @@ const genAI = new GoogleGenerativeAI(
 );
 
 export async function generateAIRecommendations(
-  metrics: DataQualityMetrics,
-  recordCount: number
+  metrics: DataQualityMetrics
 ): Promise<AIRecommendations> {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
